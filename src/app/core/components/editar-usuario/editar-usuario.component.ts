@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Usuario } from '../estructura/usuario';
+import { Usuario } from '../editar-usuario/usuario';
 
 @Component({
   selector: 'app-editar-usuario',
@@ -8,11 +8,20 @@ import { Usuario } from '../estructura/usuario';
 })
 export class EditarUsuarioComponent implements OnInit {
 
-  constructor() { }
+  usuario: Usuario;
 
-  Usuario:Usuario = new Usuario();
+  constructor() {
 
+    this.usuario = new Usuario("Juan", "Medina", 0)
+  }
+
+
+  
   ngOnInit(): void {
+  }
+
+  onSubmit (){
+console.log("entro")
   }
 
 }

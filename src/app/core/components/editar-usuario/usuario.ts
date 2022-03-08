@@ -1,8 +1,16 @@
 export class Usuario {
-    
-    nombre!:String;
-    constructor(){
-  
+
+    constructor(
+
+        public nombre:String,
+        public apellido:String,
+        public edad:number
+
+    ){
+       
 
     }
+    
+    
+    
 }
